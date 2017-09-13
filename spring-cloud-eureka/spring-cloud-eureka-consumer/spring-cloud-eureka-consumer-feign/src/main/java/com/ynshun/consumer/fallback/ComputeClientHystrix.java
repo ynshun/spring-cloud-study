@@ -1,4 +1,4 @@
-package com.ynshun.consumer.failback;
+package com.ynshun.consumer.fallback;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;

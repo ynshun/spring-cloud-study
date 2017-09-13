@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.ynshun.consumer.failback.ComputeClientHystrix;
+import com.ynshun.consumer.fallback.ComputeClientHystrix;
 
 @FeignClient(value = "compute-service", fallback = ComputeClientHystrix.class)
 public interface ComputeClient {
