@@ -1,0 +1,8 @@
+spring:
+   application:
+      name: didispace
+   cloud:
+      config:
+         label: master
+         profile: test
+         uri: http://172.16.16.68:7001
