@@ -8,11 +8,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
 @RefreshScope
+@RestController
 public class ConfigController {
 	@Autowired
 	private Environment env;
+//	@Autowired
+//	private RestTemplate restTemplate;
+	
+	
 	@Value("${spring.application.name}")
 	private String appName;
 
@@ -25,4 +29,10 @@ public class ConfigController {
 	public String getConfig(@PathVariable("key") String key) {
 		return env.getProperty(key, "niubihonghong");
 	}
+	
+//	@RequestMapping("/eureka/config/{key}")
+//	public String getEurekaConfig(@PathVariable("key") String key) {
+//		return restTemplate.getForEntity("http://CONFIG-SERVER/add?a=10&b=20", String.class).getBody();
+//	}
+	
 }
