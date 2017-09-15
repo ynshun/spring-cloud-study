@@ -32,6 +32,7 @@ public class AccessFilter extends ZuulFilter {
 			System.err.println("access token is empty");
 			ctx.setSendZuulResponse(false);
 			ctx.setResponseStatusCode(401);
+			ctx.setResponseBody("Auth fail: 401");
 			return null;
 		}
 		System.out.println("access token ok");
