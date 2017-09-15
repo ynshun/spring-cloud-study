@@ -12,5 +12,6 @@
 		<module>spring-cloud-eureka-consumer</module>
 		<module>spring-cloud-eureka-server</module>
 		<module>spring-cloud-eureka-provider</module>
+		<module>spring-cloud-eureka-zuul</module>
 	</modules>
 </project>
